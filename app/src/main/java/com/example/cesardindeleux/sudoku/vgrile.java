@@ -9,27 +9,40 @@ import java.util.Random;
  */
 
 public class vgrile {
-    int level;
-    int num;
-    int done;
+    private int level;
+    private int num;
+    private int done;
 
 
 
 
 
-    public static List<vgrile> createEntries(){
-    List<vgrile> listeVgrile = new ArrayList<vgrile>();
+    public static ArrayList<vgrile> createEntries(){
+        ArrayList<vgrile> listeVgrile = new ArrayList<vgrile>();
         for (int i = 1; i < 101; i++) {
 
             vgrile grile = new vgrile();
-            grile.num = 1;
+            grile.num = i;
             Random randomlevel = new Random();
+            Random randomdone = new Random();
             grile.level =  randomlevel.nextInt((2+1) - 1) + 1;
-            grile.done = 0;
+            grile.done = randomdone.nextInt((100+1) - 0) + 0;
             listeVgrile.add(grile);
         }
-    return listeVgrile;
+        return listeVgrile;
 
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public int getDone() {
+        return done;
     }
 }
 

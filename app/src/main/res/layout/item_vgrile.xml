@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/vgLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level" />
+    <TextView
+        android:id="@+id/vgNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num" />
+    <TextView
+        android:id="@+id/vgDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+</android.support.constraint.ConstraintLayout>
+
