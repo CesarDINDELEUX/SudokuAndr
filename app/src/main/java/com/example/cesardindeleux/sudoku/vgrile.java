@@ -17,7 +17,7 @@ public class vgrile {
 
 
 
-    public static ArrayList<vgrile> createEntries(){
+    public static ArrayList<vgrile> createEntries(String phrase){
         ArrayList<vgrile> listeVgrile = new ArrayList<vgrile>();
         for (int i = 1; i < 101; i++) {
 
@@ -25,7 +25,7 @@ public class vgrile {
             grile.num = i;
             Random randomlevel = new Random();
             Random randomdone = new Random();
-            grile.level =  randomlevel.nextInt((2+1) - 1) + 1;
+            grile.level = Integer.parseInt(phrase);
             grile.done = randomdone.nextInt((100+1) - 0) + 0;
             listeVgrile.add(grile);
         }
